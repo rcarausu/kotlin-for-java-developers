@@ -1,6 +1,6 @@
 package rcarausu._07_arrays
 
-import rcarausu._06_builtin_datatypes.DummyClass
+import rcarausu.javacode.DummyClass
 import java.math.BigDecimal
 
 fun main() {

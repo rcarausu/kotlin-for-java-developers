@@ -1,5 +1,7 @@
 package rcarausu._06_builtin_datatypes
 
+import rcarausu.javacode.DummyClass
+
 fun main() {
     // builtin data-types are basically the same as in Java
     val myInt = 10

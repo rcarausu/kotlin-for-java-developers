@@ -1,6 +1,12 @@
-package rcarausu._06_builtin_datatypes;
+package rcarausu.javacode;
 
 public class DummyClass {
+
+    private String text;
+
+    public String getText() {
+        return text;
+    }
 
     public String isVacationTime(boolean onVacation) {
         return onVacation ? "I'm on vacation!" : "I'm working";
