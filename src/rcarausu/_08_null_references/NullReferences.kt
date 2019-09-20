@@ -23,7 +23,7 @@ fun main() {
     // Can also be used when accessing class operators
     DummyClass().text?.toUpperCase()
 
-    // The Elvis operator ':?'
+    // The Elvis operator '?:'
     // It's used to avoid assigning null to a value, we define a default for it
     val str2 = str ?: "This is the default value"
 
