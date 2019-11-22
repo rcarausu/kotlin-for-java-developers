@@ -3,6 +3,9 @@ package rcarausu._16_objects
 import java.time.Year
 
 fun main(args: Array<String>) {
+
+    println(Department.ACCOUNTING.getDeptInfo())
+
     println(CompanyCommunications.getTagLine())
     println(CompanyCommunications.getCopyrightLine())
     SomeClass.Companion.accessPrivateVar()
@@ -19,6 +22,17 @@ fun main(args: Array<String>) {
         override fun mustImplement(num: Int): String =
             "This is from mustImplement: ${num * 100}"
     })
+}
+
+enum class Department(val fullName: String, val numEmployees: Int) {
+    HR("Huan Resources", 5),
+    IT("Information Technology", 10),
+    ACCOUNTING("Accounting", 3),
+    SALES("Sales", 20);
+
+    // Adding functions to enums is the one exception to semicolons are optional rule
+
+    fun getDeptInfo() = "The $fullName department has $numEmployees employees"
 }
 
 // The first use case of the 'object' keyword is for creating singletons
