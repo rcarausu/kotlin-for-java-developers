@@ -38,11 +38,15 @@ enum class Department(val fullName: String, val numEmployees: Int) {
 // The first use case of the 'object' keyword is for creating singletons
 object CompanyCommunications {
 
-    val currentYear = Year.now().value
+    private val currentYear = Year.now().value
 
     fun getTagLine() = "Our company rocks!"
     fun getCopyrightLine() = "Copyright \u00A9 $currentYear Our Company. All rights reserved."
 
+}
+
+fun topLevel(str: String) {
+    println("Top level function says $str")
 }
 
 // The second use os for creating companion classes
