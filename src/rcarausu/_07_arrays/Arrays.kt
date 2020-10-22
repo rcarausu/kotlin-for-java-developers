@@ -37,7 +37,7 @@ fun main() {
 //        println(number)
 //    }
 
-    println(mixedArray is Array<Any>)
+//    println(mixedArray is Array<Any>)
 
     val myIntArray = arrayOf(1, 2, 3, 4, 5)
     // DummyClass().printNumbers(myIntArray) This won't work for non primitive types
